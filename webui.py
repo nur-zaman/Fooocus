@@ -24,6 +24,7 @@ from modules.auth import auth_enabled, check_auth
 
 
 def generate_clicked(*args):
+    print(args)
     import ldm_patched.modules.model_management as model_management
 
     with model_management.interrupt_processing_mutex:
